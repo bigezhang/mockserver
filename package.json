@@ -1,0 +1,17 @@
+{
+  "name": "mockserver",
+  "version": "1.0.0",
+  "description": "mock server for fe",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bigezhang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "cors": "^2.8.1",
+    "express": "^4.15.0"
+  }
+}
