@@ -26,13 +26,22 @@ app.use(cors(corsOptionsDelegate));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-for (var i = 0; i < APIs.length; i++) {
-  var item = APIs[0];
-  app.use(item.url, function (req, res, next) {
-    console.log(req.query.id);
-    res.json(require('./api/' + item.moduleName));
-  })
-}
+// for (let i = 0; i < APIs.length; i++) {
+//   var item = APIs[i];
+//   console.log(item);
+//   app.use(item.url, function (req, res, next) {
+//     console.log('request');
+//     res.json(require('./api/' + item.moduleName));
+//   })
+// }
+app.get('/grabredenvelope/newrewards', function(req, res) {
+	res.json(require('./api/newrewards'))
+});
+
+app.get('/xc_v6/FestivalApi/time_range', function(req, res) {
+	res.json(require('./api/datelist'))
+});
+
 
 app.listen(config.port, function () {
   console.log('MockServer listening at http://%s:%s', config.host, config.port)
