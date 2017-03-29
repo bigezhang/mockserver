@@ -1,7 +1,7 @@
 const APIs=[  
-    {url:'/grabredenvelope/newrewards',moduleName:'newrewards'},
-    {url:'/api/detail',moduleName:'apiDetail'},
-    {url:'/xc_v6/FestivalApi/time_range',moduleName:'datelist'}
+    {url:'/grabredenvelope/newrewards', moduleName:'rewards'},
+    {url:'/grabredenvelope/getlist', moduleName:'newrewards'},
+    {url:'/grabredenvelope/rewards', moduleName:'myrewards'}
 ];
 
 module.exports=APIs;

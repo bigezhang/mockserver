@@ -4,3 +4,7 @@
 * cors 模块设置了跨域
 * api/ 目录放置返回的json 数据，.js 文件后缀方便处理
 * apis.js 所有的接口url 和 对应的接口文件名
+
+```
+module.exports = {}
+```
